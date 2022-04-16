@@ -3,7 +3,7 @@ Let's do this!
 ## prerequisites
 - docker and docker compose
 
-To set up the local docker stack, cd into the projects/localdev/ directory and run start.sh script.
+To set up the local docker stack, cd into the /projects/localdev/ directory and run the start.sh script.
 (Use sudo if you haven't given the user permissions to start docker)
 ```bash
 cd projects/localdev/
@@ -22,7 +22,7 @@ There is a default limit but it is an optional parameter. The limit is in place 
 The following parameters are available:
 - maximum_distance_from_user_m :  Will filter out bikes that are too far away for you. You will need to provide a user location in the body to use this. 
 - estimated_journey_distance_m : Will filter out vehicles that don't have enough charge left to take you where you need to go. You will need to provide a user location in the body to use this. 
-- vehicle_type  : for now these are either "escooter_paris" or "ebike_paris"
+- vehicle_type  : For now these are either "escooter_paris" or "ebike_paris"
 - only_find_available: Some vehicles are either already reserved or they are disabled. If set to true this will filter those out.
 - limit - a limit to the number of vehicles returned.
 
@@ -35,9 +35,10 @@ For the Eiffel Tower (which I've been using for manual tests):
 }
 ```
 
-## LOCAL DEV
+### Local Development
 
-Move into the projects/localdev directory and create a virtualenv. You can use any virtualenv tool you like, just make sure you activate the environment before installing things.
+Move into the projects/localdev directory and create a virtual environment. 
+You can use any virtual environment tool you like, just make sure you activate the environment before installing things.
 ```bash
 virtualenv .localvenv
 
