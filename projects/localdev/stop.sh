@@ -1,0 +1,1 @@
+docker-compose -f docker-stack.yml down -v --remove-orphans

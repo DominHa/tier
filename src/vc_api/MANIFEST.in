@@ -1,0 +1,2 @@
+exclude **/*.pyc
+include vc_api/external_data_service/tests/assets/*

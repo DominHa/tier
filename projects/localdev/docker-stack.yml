@@ -1,0 +1,18 @@
+services:
+  api:
+    build:
+      context: /home/tom/git/tier
+      dockerfile: projects/localdev/containers/api.dockerfile
+    command: /opt/api/api_entrypoint.sh
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4096M
+    environment:
+      TEST_VAR: var
+    ports:
+    - published: 8080
+      target: 80
+version: '3.3'
+

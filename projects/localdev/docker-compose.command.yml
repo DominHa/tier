@@ -1,0 +1,4 @@
+version: '3.3'
+services:
+  api:
+    command: /opt/api/api_entrypoint.sh
